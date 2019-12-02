@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>My Sketch</title>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.0/processing.min.js"></script>
+</head>
+<body>
+<script type="application/processing">
+
+void setup() {
+size(500,500);
+background(#38ACEC);
+}
+
+void draw () {
+background(#38ACEC);
+
+//yellow balloon
+fill(#FFFF00);
+line(mouseX, mouseY, mouseX, mouseY-175);
+ellipse (mouseX, mouseY-175, 55,65);
+
+//red balloon
+fill(#FF0000);
+line(mouseX, mouseY, mouseX-55, mouseY-100);
+ellipse (mouseX-55, mouseY-100, 55,65);
+
+//green balloon
+fill(#4CC552);
+line(mouseX, mouseY, mouseX-(-55), mouseY-100);
+ellipse (mouseX-(-55), mouseY-100, 55,65);
+
+//purple balloon 
+fill(#A23BEC);
+line(mouseX, mouseY, mouseX-(-25), mouseY-150);
+ellipse (mouseX-(-25), mouseY-150, 55,65);
+
+//pink balloon
+fill(#FAAFBE);
+line(mouseX, mouseY, mouseX-(25), mouseY-150);
+ellipse (mouseX-(25), mouseY-150, 55,65);
+
+//blue balloon
+fill(#0000FF);
+line(mouseX, mouseY, mouseX-0, mouseY-100);
+ellipse (mouseX-0, mouseY-100, 55,65);
+
+//face
+fill(#FFEBCD);
+ellipse(150,300,160,190);
+
+//mouth
+fill(0);
+arc(150, 345, 50, 40, 0, 3.14);
+
+//eyes
+fill(255);
+ellipse(120, 290, 20, 30);
+ellipse(175, 290, 20, 30);
+fill(#6F4E37);
+ellipse(120, 295, 15, 15);
+ellipse(175, 295, 15, 15);
+
+//hair
+fill(#7E3817);
+ellipse(150,230,148,68);
+ellipse(70,260,25,45);
+ellipse(70,300,25,45);
+ellipse(70,340,25,45);
+ellipse(70,380,25,45);
+ellipse(70,420,25,45);
+ellipse(230,260,25,45);
+ellipse(230,300,25,45);
+ellipse(230,340,25,45);
+ellipse(230,380,25,45);
+ellipse(230,420,25,45);
+triangle(70,435,60,465,80,465);
+triangle(230,435,220,465,240,465);
+
+
+//nose
+fill(#FFCBA4);
+triangle(165,330,145,330,145,310);
+
+//bow
+fill(#F778A1);
+triangle(155,400,180,380,180,430);
+triangle(145,400,120,380,120,430);
+ellipse(150,400,19,19);
+
+//flower petals left
+fill(255);
+ellipse(70,235,20,15);
+ellipse(90,235,20,15);
+ellipse(80,225,15,20);
+ellipse(80,245,15,20);
+
+//flower petals right
+fill(255);
+ellipse(210,235,20,15);
+ellipse(230,235,20,15);
+ellipse(220,225,15,20);
+ellipse(220,245,15,20);
+
+//flower center left
+fill(#FFFF00);
+ellipse(80,235,10,10);
+
+//flower center right
+fill(#FFFF00);
+ellipse(220,235,10,10);
+
+//hair tie left
+fill(#F778A1);
+rect(62,435,15,6);
+
+//hair tie right
+fill(#F778A1);
+rect(222,435,15,6);
+}
+
+</script>
+<canvas> </canvas>
+</body>
+</html>
